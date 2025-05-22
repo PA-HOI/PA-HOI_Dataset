@@ -6,8 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PAA-HOI Dataset:<br> 
-    A Physical Attribute-Aware Human and Object Interaction Dataset</title>
+  <title>PAA-HOI Dataset: A Physical Attribute-Aware Human and Object Interaction Dataset</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -49,7 +48,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PAA-HOI Dataset: A Physical Attribute-Aware Human and Object Interaction Dataset</h1>
+          <h1 class="title is-1 publication-title">PAA-HOI Dataset:<br> A Physical Attribute-Aware Human and Object Interaction Dataset</h1>
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -80,31 +79,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+The Human-Object Interaction (HOI) task explores the dynamic interactions between humans and objects in physical environments, providing essential biomechanical and cognitive-behavioral foundations for fields such as robotics, virtual reality, and human-computer interaction.
+However, existing data sets focus mainly on details of hand grasping or object grasping preferences, often neglecting the influence of physical properties of objects on human motion. To address this limitation, we introduce the PAA-HOI Mocap dataset—the first dataset that highlights the impact of objects’ physical attributes on human motion dynamics, including human posture, moving velocity, and other motion characteristics.
+The dataset comprises 562 full-body interaction motion sequences performed by different gender subjects interacting with 35 3D objects in different sizes, shapes, and weights.
+This dataset stands out by significantly extending the scope of existing ones for modeling and understanding how the physical attributes of different objects influence human posture, speed, range of motion, and grasping strategies during movement interactions.
+We further demonstrate the dataset’s applicability by integrating it with several existing motion generation methods, validating its capacity to transfer realistic physical awareness.
           </p>
         </div>
       </div>
