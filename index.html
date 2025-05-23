@@ -116,12 +116,40 @@
   </figcaption>
 </figure>
 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- 左视频 -->
+      <div class="column">
+        <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- 右视频 -->
+      <div class="column">
+        <video id="matting-video" controls playsinline style="width: 100%;">
+          <source src="./static/videos/matting.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- 合并描述 -->
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <p class="has-text-justified">
+          <strong>Video demonstrations:</strong> The left video showcases a Dolly zoom effect achieved through our method, which allows for camera movement through walls. The right video illustrates how our rendering process addresses the matting problem by discarding samples outside the bounding box.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
     
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
@@ -159,6 +187,10 @@
     <!--/ Matting. -->
 
 
+
+
+
+    
 <footer class="footer" style="background-color: #f5f5f5; padding: 2rem 1rem;">
   <div class="container">
     <div class="content has-text-centered">
