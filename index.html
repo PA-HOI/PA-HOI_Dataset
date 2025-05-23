@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="PAA-HOI Dataset.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PAA-HOI Dataset: A Physical Attribute-Aware Human and Object Interaction Dataset</title>
@@ -119,32 +119,42 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+
+    <!-- 并排视频标题 + 视频 -->
     <div class="columns is-centered">
-      <!-- 左视频 -->
+      <!-- 左侧 -->
       <div class="column">
-        <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
-          <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
-        </video>
+        <div class="content">
+          <h2 class="title is-4 has-text-centered">Behind The Scenes</h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
 
-      <!-- 右视频 -->
+      <!-- 右侧 -->
       <div class="column">
-        <video id="matting-video" controls playsinline style="width: 100%;">
-          <source src="./static/videos/matting.mp4" type="video/mp4">
-        </video>
+        <div class="content">
+          <h2 class="title is-4 has-text-centered">Rendering Results</h2>
+          <video id="matting-video" controls playsinline style="width: 100%;">
+            <source src="./static/videos/matting.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
 
-    <!-- 合并描述 -->
+    <!-- 合并描述，与左右视频边界对齐 -->
     <div class="columns is-centered">
-      <div class="column is-two-thirds">
+      <div class="column">
         <p class="has-text-justified">
           <strong>Video demonstrations:</strong> The left video showcases a Dolly zoom effect achieved through our method, which allows for camera movement through walls. The right video illustrates how our rendering process addresses the matting problem by discarding samples outside the bounding box.
         </p>
       </div>
     </div>
+
   </div>
 </section>
+
 
     
 <section class="section">
