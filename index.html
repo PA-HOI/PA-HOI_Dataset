@@ -96,36 +96,26 @@
     <h2 class="title is-3 has-text-centered">Overview</h2>
   </div>
 </section>
-
 <figure style="width:80%; margin: 0 auto;">
   <img src="./static/pipeline.png" alt="Dataset pipeline" style="width:100%;">
   <figcaption style="margin-top: 10px; text-align: left;">
-    <strong>Overview of our dataset collection.</strong> During the motion data acquisition phase, subjects first calibrate while wearing motion capture suits, and objects require inertial sensor bias correction before performing corresponding interactive actions described in the prompts. The acquired data is then processed to fit SMPLX sequences and the 6DoF pose of objects. We adopt a unified textual template integrated with a predefined set of annotation keywords to describe HOI actions, and employ a large language model (LLM) to augment the prompt for each sequence.
+    <strong>The Overview of our dataset collection.</strong> During the motion data acquisition phase, subjects first calibrate while wearing motion capture suits, and objects require inertial sensor bias correction before performing corresponding interactive actions described in the prompts. The acquired data is then processed to fit SMPLX sequences and the 6DoF pose of objects. We adopt a unified textual template integrated with a predefined set of annotation keywords to describe HOI actions, and employ LLMs to augment the prompt for each sequence.
   </figcaption>
 </figure>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Dataset Analysis. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Analysis</h2>
-        <div class="content has-text-justified">
-          </p>
-          <!-- 添加图片和图注 -->
-          <figure style="text-align: center;">
-            <img src="./static/data_analysis.png" alt="Pipeline diagram" style="max-width: 100%; height: auto;">
-            <figcaption style="margin-top: 0.5rem; font-style: italic;">
-              The dataset analysis. (a) and (b) illustrate the proportional distributions of various motions and motion paths within the interaction sequences, respectively. (c) presents the changes in the number of textual descriptions before and after augmentation with different action prompts. (d) reports the average number of frames in interaction sequences involving different actions and objects of varying weights.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-    <!--/ Dataset Analysis. -->
+    <h2 class="title is-3 has-text-centered">Dataset Analysis</h2>
   </div>
 </section>
+<figure style="width:80%; margin: 0 auto;">
+  <img src="./static/data_analysis.png" alt="Dataset Analysis" style="width:100%;">
+  <figcaption style="margin-top: 10px; text-align: left;">
+    <strong>The dataset analysis.</strong> (a) and (b) illustrate the proportional distributions of various motions and motion paths within the interaction sequences, respectively. (c) presents the changes in the number of textual descriptions before and after augmentation with different action prompts. (d) reports the average number of frames in interaction sequences involving different actions and objects of varying weights.
+            </figcaption>
+  </figcaption>
+</figure>
+
     
 <section class="section">
   <div class="container is-max-desktop">
